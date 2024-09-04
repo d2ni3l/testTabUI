@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Font importato */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS RESET */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.title {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  padding-top: 5px;
+}
+.display {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-inline: 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  width: 100vw;
+}
+
+.inner-cards {
+  border: 3px solid #6e6e6e;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 10 !important;
+  transition: all 100ms ease-out;
+  position: relative
+}
+
+.text {
+  color: black;
+}
+.col {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  color: gray;
+  align-items: center;
+}
+.line {
+  border: 1px solid darkgray;
+  margin-block: 5px;
+}
+
+.text-red {
+  color: #ae1419;
+}
+
+@media (max-width: 720px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .display {
+    margin-inline: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pt-1{
+  padding-top: 4px;
+}
+.text-sm {
+  font-size: 12px;
+}
+.row-btn{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+  padding: 1rem 3rem;
+  background: white;
+  outline: 2px solid #ae1419;
+  padding-top: 2rem;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 5px 30px 0 rgb(0 0 0 / 10%);
+  animation: fadeIn 1s ease both;
+  z-index: 100 !important;
+}
+
+.modal-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  background-color: rgba(67, 66, 66, 0.5);
+}
+
+.modal-inner-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-wrapper {
+    inset: 0;
+  }
+}
+
+.x {
+  padding-top: 5px;
+  margin-inline: 20px;
+  color: x;
+  font-weight: bold;
+  color: #ae1419;
+  font-size: 18px;
+  float: right;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+  scale: 1;
+  transition: all 50ms ease-in-out;
+}
+
+.x:hover {
+  scale: 1.09;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.font-size {
+  font-size: 22px;
+}
+
+
+.update{
+  margin-top: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input{
+ background: white;
+ outline: 1px solid black;
+ border-radius: 5px;
+ padding-block: 7px;
+ color: rgb(59, 59, 59);
+ 
+ font-weight: 700;
+
+}
+
+
+.z-20{
+  z-index: 20 !important;
+}
+
+.svg-del{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 1px;
+  border-radius: 100%;
+  padding: 3px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale:1;
+  transition: all 300ms ease-in-out;
+  fill:#ae1419;
+
+
+}
+
+.svg-del:hover{
+  scale:1.3;
+}
+

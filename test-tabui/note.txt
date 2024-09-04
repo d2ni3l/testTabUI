@@ -1,0 +1,1 @@
+When after user updates profile i want the modal info to update and home page should refetch data
